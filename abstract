@@ -1,0 +1,24 @@
+UAV (QUADCOPTER)
+SNIGDHA MUDGAL
+BRANCH: ECE
+VIT UNIVERSITY, VELLORE
+snigdha.vit@gmail.com
+ABSTRACT:
+This document gives an insight to the idea behind making of a quadcopter and how it is going to be executed.
+For the body of the quadcopter, I am going to use a 4-Axis Airframe chassis, 1045 propeller multirotors and A2212 1000KV Brushless motor. I am planning to use arduino uno as a flight controller and 30A ESC as speed controller.
+The basic idea is to use PID to tune the quadcopter with transmitter and receiver pair. PID is basically a specific function inside the flight controller or ESC that is responsible for stabilizing the flight of the drone. PID stands for “proportional integral and derivative”. But first of all, for a successful flight, we need to find the centre of gravity of the quadcopter and lower its angular mass or rotational inertia. 
+All PID controllers have what’s called a current value (in this case it’s the current orientation of the drone) and a desired value (the orientation that it wants to be at). When we move the control stick on our transmitter in a particular direction, we actually aren’t the one making the drone move. We are actually just changing the desired orientation and the PID loop figures out how much power each motor needs to get the drone pointed in the direction we want. The controller also helps in dampening and eliminating various unwanted factors during flights like wind. 
+
+COMPONENTS REQUIRED
+1)	 Arduino UNO
+2)	 Cable
+3)	 CT6B Remote 6 channel transmitter+receiver
+4)	 REES52 LiPo battery_2200  with charger
+5)	 4-Axis Airframe
+6)	 1045 Propellers
+7)	 30A ESC
+8)	 1000KV Brushless Motor
+9)	 Jumper wires
+10)	Arduino IDE 
+11)	Camera (not necessary)
+
